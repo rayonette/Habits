@@ -679,12 +679,11 @@ body {
 a {
   transition: color 0.6s;
 }
-.cid-sFGzlAXw3z {
-  z-index: 1000;
-  width: 100%;
+.cid-sFGzlAXw3z .navbar-dropdown {
+  position: relative !important;
 }
-.cid-sFGzlAXw3z nav.navbar {
-  position: fixed;
+.cid-sFGzlAXw3z .navbar-dropdown {
+  position: absolute !important;
 }
 .cid-sFGzlAXw3z .dropdown-item:before {
   font-family: Moririse2 !important;
@@ -804,6 +803,11 @@ a {
 }
 .cid-sFGzlAXw3z .navbar.collapsed.opened .dropdown-menu {
   top: 0;
+}
+@media (min-width: 992px) {
+  .cid-sFGzlAXw3z .navbar.collapsed.opened:not(.navbar-short) .navbar-collapse {
+    max-height: calc(98.5vh - 3.5rem);
+  }
 }
 .cid-sFGzlAXw3z .navbar.collapsed .dropdown-menu .dropdown-submenu {
   left: 0 !important;
@@ -994,7 +998,6 @@ a {
 }
 .cid-sFGzlAXw3z .navbar-dropdown {
   padding: 0 1rem;
-  position: fixed;
 }
 .cid-sFGzlAXw3z a.nav-link {
   display: flex;
@@ -1133,7 +1136,7 @@ a {
 .cid-sFGJrLtt3K {
   padding-top: 2rem;
   padding-bottom: 3rem;
-  background-image: url("../../../assets/images/habits-charte-graphique-v1-1-2000x1642.png");
+  background-image: url("../../../assets/images/habits-backgrounds-1754x1600.jpg");
 }
 .cid-sFGJrLtt3K .mbr-iconfont {
   display: block;
@@ -1219,5 +1222,5 @@ a {
   color: black;
 }
 .cid-sFGDg6hy8z .copyright {
-  color: #ffe885;
+  color: #fff0b0;
 }
